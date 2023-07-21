@@ -1,0 +1,63 @@
+/*MOBILE RESPONSIVE*/
+
+/*GENERAL*/
+body {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+}
+
+/*NAVIGATION*/
+
+.header .nav li {
+    list-style-type: none; /*remove navigation bulletpoints*/
+}
+
+
+/*SECTIONS*/
+
+
+/*HEADINGS*/
+
+
+/*LINKS*/
+
+a {
+    text-decoration: none; /*remove underlines*/
+}
+
+
+
+
+/*CTAS - BUTTONS*/
+
+
+/*TEXT*/
+
+
+/*IMAGES*/
+
+
+/*SOCIAL*/
+
+
+@media (min-width: 480px) {
+
+}
+
+
+
+@media (min-width: 768px) {
+
+}
+
+
+
+@media (min-width: 992px) {
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+}
