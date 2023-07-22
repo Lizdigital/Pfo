@@ -6,6 +6,12 @@ body {
     margin: 0;
 }
 
+hr {
+    background-color: #BF737C;
+    height: 5px;
+    margin-top: -20px;
+}
+
 /*NAVIGATION*/
 
 
@@ -16,8 +22,12 @@ body {
     text-align: center;
 }
 
-section, header {
+header {
     min-height: 40vh;
+}
+
+.headerText {
+    padding: 50px 0;
 }
 
 /*HEADINGS*/
@@ -25,12 +35,20 @@ section, header {
 
 .h1 {
     font-size: 30px;
-    color: #580081; /*820984 521982;*/
+    /* -webkit-text-stroke: 0.5px black; */
+    /* color: #af505b; */
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    /* color: #580081; 820984 521982; */
 }
 
 .h2 {
     font-size: 25px;
-    color:  #580081; /*#1c54e3;*/
+    /* color:  #580081; #1c54e3; */
+    background-color: #af505b;
+    padding: 5px 0;
+    letter-spacing: 2px;
 }
 
 .h3 {
@@ -38,11 +56,15 @@ section, header {
     color: #3456cb; /*#BF737C;*/
 }
 
+.h1, .h2, .h3 {
+    margin-bottom: 30px;
+}
+
 /*TEXT*/
 
 .para1 {
     font-size: 16px;
-    color: #331dc4;
+    /* color: #331dc4; */
 }
 
 /*LINKS*/
@@ -54,6 +76,27 @@ a {
 
 /*CTAS - BUTTONS*/
 
+.centreCTA {
+    display: grid;
+    justify-content: center;
+}
+
+
+.cta {
+    color: black;
+    border: 3px solid #3456cb;
+    padding: 10px 40px;
+    /* background-color: #3456cb; */
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta:hover {
+    color: #3456cb;
+    /* border: 3px solid black; */
+    font-weight: bold;
+    /* background-color: #3456cb; */
+}
 
 /*IMAGES*/
 
@@ -101,7 +144,7 @@ body {
 }
 .nav li {
     display: inline;
-    padding: 20px 40px;
+    padding: 20px 30px;
     /* background-color: red; */
 }
 
@@ -119,11 +162,24 @@ body {
     list-style-type: none; /*remove navigation bulletpoints*/
 }
 
+/*SECTION*/
+
+.About{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 150px;
+    /* background-color: #BF737C; */
+    padding: 20px;
+    line-height: 25px;
+}
+
 
 /*HEADINGS*/
 
 .h1 {
-    font-size: 36px;
+    font-size: 40px;
 }
 
 .h2 {
@@ -138,6 +194,11 @@ body {
 
 .para1 {
     font-size: 18px;
+    line-height: 30px;
 }
+
+/* .aboutpara1, .aboutpara2 {
+    width: 40%;
+} */
 
 }
