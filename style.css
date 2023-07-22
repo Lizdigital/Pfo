@@ -8,16 +8,42 @@ body {
 
 /*NAVIGATION*/
 
-.header .nav li {
-    list-style-type: none; /*remove navigation bulletpoints*/
-}
 
 
 /*SECTIONS*/
 
+.header {
+    text-align: center;
+}
+
+section, header {
+    min-height: 40vh;
+}
 
 /*HEADINGS*/
 
+
+.h1 {
+    font-size: 30px;
+    color: #580081; /*820984 521982;*/
+}
+
+.h2 {
+    font-size: 25px;
+    color:  #580081; /*#1c54e3;*/
+}
+
+.h3 {
+    font-size: 20px;
+    color: #3456cb; /*#BF737C;*/
+}
+
+/*TEXT*/
+
+.para1 {
+    font-size: 16px;
+    color: #331dc4;
+}
 
 /*LINKS*/
 
@@ -26,18 +52,17 @@ a {
 }
 
 
-
-
 /*CTAS - BUTTONS*/
-
-
-/*TEXT*/
 
 
 /*IMAGES*/
 
 
 /*SOCIAL*/
+
+.footer {
+    background-color: #af505b;
+}
 
 
 @media (min-width: 480px) {
@@ -59,5 +84,60 @@ a {
 
 
 @media (min-width: 1200px) {
+
+/*GENERAL*/
+
+body {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/*NAVIGATION*/
+
+.nav {
+    padding: 30px;
+    text-align: center;
+    /* background-color: green; */
+}
+.nav li {
+    display: inline;
+    padding: 20px 40px;
+    /* background-color: red; */
+}
+
+.nav li a {
+    color: #000;
+    /* background-color: #521982; */
+}
+
+.nav li a:hover {
+    color: #af505b;
+    text-decoration: underline;
+}
+
+.header .nav li {
+    list-style-type: none; /*remove navigation bulletpoints*/
+}
+
+
+/*HEADINGS*/
+
+.h1 {
+    font-size: 36px;
+}
+
+.h2 {
+    font-size: 31px;
+}
+
+.h3 {
+    font-size: 26px;
+}
+
+/*TEXT*/
+
+.para1 {
+    font-size: 18px;
+}
 
 }
