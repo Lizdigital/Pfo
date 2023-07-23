@@ -12,13 +12,99 @@ hr {
     margin-top: -20px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'seo seo seo seo seo seo'
+    'ux ux ux ux ux ux'
+    'analytics analytics analytics analytics analytics analytics'
+    'access access access access access access'
+    'cms cms cms cms cms cms'
+    'html html html html html html'
+    'css css css css css css'
+    'qa qa qa qa qa qa'
+    'socialMedia socialMedia socialMedia socialMedia socialMedia socialMedia';
+    text-align: center;
+    min-height: 100vh;
+    gap: 15px;
+}
+
+.seo, .ux, .analytics, .access, .cms, .html, .css, .qa, .socialMedia {
+    padding: 50px;
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 5px #cfb1b5;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+.seo {
+    grid-area: seo;
+    /* background-color: #3456cb; */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/seo.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.seo:hover {
+    content: "SEO testing";
+}
+
+.ux {
+    grid-area: ux;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/ux.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.analytics {
+    grid-area: analytics;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/analytics.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.access {
+    grid-area: access;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/accessibility3.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.cms {
+    grid-area: cms;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/cms.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.html {
+    grid-area: html;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/html2.jpeg') center no-repeat;
+    background-size: cover;
+}
+
+.css {
+    grid-area: css;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/css2.jpeg') center no-repeat;
+    background-size: cover;
+}
+
+.qa {
+    grid-area: qa;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/qa2.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.socialMedia {
+    grid-area: socialMedia;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/social.jpg') center no-repeat;
+    background-size: cover;
+}
+
 /*NAVIGATION*/
 
 
 
 /*SECTIONS*/
 
-.header {
+.header, .contact {
     text-align: center;
 }
 
@@ -30,8 +116,24 @@ header {
     padding: 50px 0;
 }
 
-/*HEADINGS*/
+.About{
+    display: grid;
+    justify-content: center;
+    margin: 0 50px;
+    /* background-color: #BF737C; */
+    padding: 20px;
+    line-height: 25px;
+}
 
+.footer {
+    /* background-color: #af505b; */
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+/*HEADINGS*/
 
 .h1 {
     font-size: 30px;
@@ -108,8 +210,9 @@ a {
 
 /*SOCIAL*/
 
-.footer {
-    background-color: #af505b;
+.socialImg {
+    width: 35px;
+    height: 35px;
 }
 
 
@@ -121,12 +224,29 @@ a {
 
 @media (min-width: 768px) {
 
+    .About{
+        margin: 0 80px;
+    }
+
+    .seo, .ux, .analytics, .access, .cms, .html, .css, .qa, .socialMedia {
+        margin: 0 50px;
+    }
+
 }
 
 
 
 @media (min-width: 992px) {
 
+    .About{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 0 80px;
+    }
+
+    .seo, .ux, .analytics, .access, .cms, .html, .css, .qa, .socialMedia {
+        margin: 0 140px;
+    }
 }
 
 
@@ -159,6 +279,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 21px;
+    margin: 0;
 }
 
 .seo {
@@ -244,14 +365,7 @@ body {
 /*SECTION*/
 
 .About{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    gap: 20px;
     margin: 0 150px;
-    /* background-color: #BF737C; */
-    padding: 20px;
-    line-height: 25px;
 }
 
 
