@@ -29,6 +29,54 @@ hr {
     gap: 15px;
 }
 
+.grid-contain-seo, .grid-contain-ux, .grid-contain-analytics, .grid-contain-access, .grid-contain-html, .grid-contain-css {
+    display: grid;
+    min-height: 40vh;
+    gap: 15px;
+}
+
+.grid-contain-seo {
+    grid-template-areas:
+    'ux ux ux ux ux ux'
+    'analytics analytics analytics analytics analytics analytics'
+    'access access access access access access';
+}
+
+.grid-contain-ux {
+    grid-template-areas:
+    'seo seo seo seo seo seo'
+    'analytics analytics analytics analytics analytics analytics'
+    'access access access access access access';
+}
+
+.grid-contain-analytics {
+    grid-template-areas:
+    'html html html html html html'
+    'seo seo seo seo seo seo'
+    'ux ux ux ux ux ux';
+}
+
+.grid-contain-access {
+    grid-template-areas:
+    'ux ux ux ux ux ux'
+    'html html html html html html'
+    'css css css css css css';
+}
+
+.grid-contain-html {
+    grid-template-areas:
+    'css css css css css css'
+    'ux ux ux ux ux ux'
+    'access access access access access access';
+}
+
+.grid-contain-css {
+    grid-template-areas:
+    'html html html html html html'
+    'ux ux ux ux ux ux'
+    'access access access access access access';
+}
+
 .seo, .ux, .analytics, .access, .cms, .html, .css, .qa, .socialMedia {
     padding: 50px;
     /* border: 1px solid black; */
@@ -39,11 +87,17 @@ hr {
     font-size: 21px;
 }
 
-.seo {
+.seo, .skillsSeoImg {
     grid-area: seo;
     /* background-color: #3456cb; */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/seo.jpg') center no-repeat;
     background-size: cover;
+}
+
+.skillsSeoImg {
+    height: 30vh;
+    color: white;
+    padding-top: 1%;
 }
 
 .seo:hover {
@@ -98,6 +152,13 @@ hr {
     background-size: cover;
 }
 
+.seo-words, .seo-screenshot {
+    text-align: center;
+    margin: 60px;
+    padding: 20px;
+    background-color: aqua;
+}
+
 /*NAVIGATION*/
 
 
@@ -136,7 +197,7 @@ header {
 /*HEADINGS*/
 
 .h1 {
-    font-size: 30px;
+    font-size: 35px;
     /* -webkit-text-stroke: 0.5px black; */
     /* color: #af505b; */
     text-transform: uppercase;
@@ -145,15 +206,15 @@ header {
 }
 
 .h2 {
-    font-size: 25px;
+    font-size: 30px;
     /* color:  #580081; #1c54e3; */
     background-color: #af505b;
     padding: 5px 0;
     box-shadow: 2px 2px 5px #BF737C;
 }
 
-.h3 {
-    font-size: 20px;
+.h3, .h3words {
+    font-size: 25px;
     /* color: #3456cb; #BF737C; */
     text-align: center;
     padding: 100px 0 50px 0;
@@ -168,7 +229,7 @@ header {
 /*TEXT*/
 
 .para1 {
-    font-size: 16px;
+    font-size: 18px;
     /* color: #331dc4; */
 }
 
@@ -207,6 +268,12 @@ a {
 
 /*IMAGES*/
 
+.words {
+    background: url("./images/Testimonials/words.jpeg") fixed center no-repeat;
+    background-size: contain;
+    height: 40vh;
+}
+
 
 /*SOCIAL*/
 
@@ -218,6 +285,11 @@ a {
 
 @media (min-width: 480px) {
 
+/*IMAGES*/
+
+    .words {
+        height: 25vh;
+    }
 }
 
 
@@ -230,6 +302,17 @@ a {
 
     .seo, .ux, .analytics, .access, .cms, .html, .css, .qa, .socialMedia {
         margin: 0 50px;
+    }
+
+    .seo-words, .seo-screenshot {
+        margin: 100px;
+        background-color: purple;
+    }
+
+/*IMAGES*/
+
+    .words {
+        height: 45vh;
     }
 
 }
@@ -246,6 +329,11 @@ a {
 
     .seo, .ux, .analytics, .access, .cms, .html, .css, .qa, .socialMedia {
         margin: 0 140px;
+    }
+
+    .seo-words, .seo-screenshot {
+        margin: 100px 150px;
+        background-color: purple;
     }
 }
 
@@ -269,6 +357,48 @@ body {
     text-align: center;
     height: 100vh;
     gap: 15px;
+}
+
+.grid-contain {
+    display: grid;
+    grid-template-areas: 
+    'seo-screenshot seo-screenshot seo-screenshot seo-words seo-words seo-words';
+    margin: 100px;
+    gap: 50px;
+}
+
+.grid-contain-seo, .grid-contain-ux, .grid-contain-analytics, .grid-contain-access, .grid-contain-html, .grid-contain-css {
+    height: 40vh;
+}
+
+.grid-contain-seo {
+    grid-template-areas:
+    'ux ux analytics analytics access access';
+}
+
+.grid-contain-ux {
+    grid-template-areas:
+    'seo seo analytics analytics access access'
+}
+
+.grid-contain-analytics {
+    grid-template-areas:
+    'html html seo seo ux ux'
+}
+
+.grid-contain-access {
+    grid-template-areas:
+    'ux ux html html css css'
+}
+
+.grid-contain-html {
+    grid-template-areas:
+    'css css ux ux access access';
+}
+
+.grid-contain-css {
+    grid-template-areas:
+    'html html ux ux access access'
 }
 
 .seo, .ux, .analytics, .access, .cms, .html, .css, .qa, .socialMedia {
@@ -335,12 +465,32 @@ body {
     background-size: cover;
 }
 
+.seo-screenshot {
+    grid-area: seo-screenshot;
+    background-color: #3456cb;
+}
+
+.seo-words {
+    grid-area: seo-words;
+    background-color: #af505b;
+}
+
+.seo-words, .seo-screenshot {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
 /*NAVIGATION*/
 
 .nav {
     padding: 30px;
     text-align: center;
     /* background-color: green; */
+    /* position: fixed;
+    background-color: white;
+    width: fit-content; */
 }
 .nav li {
     display: inline;
@@ -389,6 +539,15 @@ body {
     font-size: 18px;
     line-height: 30px;
 }
+
+/*IMAGES*/
+
+.words {
+    height: 80vh;
+}
+
+
+
 
 /* .aboutpara1, .aboutpara2 {
     width: 40%;
