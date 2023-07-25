@@ -161,7 +161,45 @@ hr {
 
 /*NAVIGATION*/
 
+i.mobile-toggle {
+    display: block;
+    /* position: fixed; */
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
 
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    list-style: none;
+    padding-left: 0;
+}
+
+.mobile-nav li {
+    padding: 20px;
+  }
+
+.mobile-nav a { 
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-nav a:hover { 
+    color: #bd6513;
+    transition: 0.7s;
+    border-bottom: 1px solid #bd6513;
+}
+
+.mobile-nav.active {
+    display: block;
+  }
 
 /*SECTIONS*/
 
@@ -483,6 +521,15 @@ body {
 }
 
 /*NAVIGATION*/
+
+i.mobile-toggle {
+    display: none;
+}
+
+.mobile-nav {
+    display: block;
+    position: unset;
+}
 
 .nav {
     padding: 30px;
