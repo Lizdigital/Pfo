@@ -350,6 +350,8 @@ a {
 /*IMAGES*/
 
     .words {
+        background: url("./images/Testimonials/words3.jpeg") fixed center no-repeat;
+        background-size: contain;
         height: 45vh;
     }
 
@@ -590,9 +592,10 @@ i.mobile-toggle {
 /*IMAGES*/
 
 .words {
+    background: url("./images/Testimonials/words2.jpeg") fixed center no-repeat;
+    background-size: contain;
     height: 80vh;
 }
-
 
 
 
