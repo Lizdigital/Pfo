@@ -7,7 +7,7 @@ body {
 }
 
 hr {
-    background-color: #BF737C;
+    background-color: #bf737c;
     height: 5px;
     margin-top: -20px;
 }
@@ -94,29 +94,43 @@ hr {
     background-size: cover;
 }
 
-.skillsSeoImg {
+.skillsSeoImg, .skillsUxImg, .skillsHtmlImg, .skillsCssImg, .skillsAccessImg, .skillsAnalyticsImg {
     height: 30vh;
     color: white;
     padding-top: 1%;
 }
 
-.seo:hover {
+/* .seo:hover {
     content: "SEO testing";
+    opacity: 1;
+} */
+
+.seo:hover .hover-text {
+    opacity: 1;
+    transition: opacity 0.9s ease;
 }
 
-.ux {
+.beforeHoverText {
+    opacity: 1;
+}
+
+.seo:hover .beforeHoverText {
+    opacity: 0;
+}
+
+.ux, .skillsUxImg {
     grid-area: ux;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/ux.jpg') center no-repeat;
     background-size: cover;
 }
 
-.analytics {
+.analytics, .skillsAnalyticsImg {
     grid-area: analytics;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/analytics.jpg') center no-repeat;
     background-size: cover;
 }
 
-.access {
+.access, .skillsAccessImg {
     grid-area: access;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/accessibility3.jpg') center no-repeat;
     background-size: cover;
@@ -128,13 +142,13 @@ hr {
     background-size: cover;
 }
 
-.html {
+.html, .skillsHtmlImg {
     grid-area: html;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/html2.jpeg') center no-repeat;
     background-size: cover;
 }
 
-.css {
+.css, .skillsCssImg {
     grid-area: css;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/css2.jpeg') center no-repeat;
     background-size: cover;
@@ -153,10 +167,10 @@ hr {
 }
 
 .seo-words, .seo-screenshot {
-    text-align: center;
+    /* text-align: center; */
     margin: 60px;
     padding: 20px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 /*NAVIGATION*/
@@ -168,6 +182,7 @@ i.mobile-toggle {
     position: absolute;
     top: 20px;
     right: 20px;
+    z-index: 2;
 }
 
 .mobile-nav {
@@ -252,23 +267,32 @@ header {
 }
 
 .h3, .h3words {
+    padding: 100px 0 50px 0;
+}
+
+.h3, .h3words, .h3LessSpace {
     font-size: 25px;
     /* color: #3456cb; #BF737C; */
     text-align: center;
-    padding: 100px 0 50px 0;
-
 }
 
-.h1, .h2, .h3 {
+.h1, .h2, .h3, .h3LessSpace {
     margin-bottom: 30px;
     letter-spacing: 2px;
 }
 
+.h3LessSpace {
+    padding: 0 0 50px 0;
+}
 /*TEXT*/
 
 .para1 {
     font-size: 18px;
     /* color: #331dc4; */
+}
+
+.hover-text {
+    opacity: 0;
 }
 
 /*LINKS*/
@@ -295,6 +319,7 @@ a {
     margin: 25px 20px 0 20px;
     box-shadow: 1px 1px 5px #3456cb;
     text-align: center;
+    font-size: 19px;
 }
 
 .cta:hover {
@@ -320,8 +345,19 @@ a {
     height: 35px;
 }
 
+.copy {
+    padding: 10px;
+}
+
 
 @media (min-width: 480px) {
+
+/*TEXT*/
+
+.para1 {
+    /* font-size: 19px; */
+    /* color: #331dc4; */
+}
 
 /*IMAGES*/
 
@@ -344,7 +380,7 @@ a {
 
     .seo-words, .seo-screenshot {
         margin: 100px;
-        background-color: purple;
+        /* background-color: purple; */
     }
 
 /*IMAGES*/
@@ -373,7 +409,7 @@ a {
 
     .seo-words, .seo-screenshot {
         margin: 100px 150px;
-        background-color: purple;
+        /* background-color: purple; */
     }
 }
 
@@ -452,6 +488,14 @@ body {
     margin: 0;
 }
 
+.seo:hover, .analytics:hover, .cms:hover, .css:hover, .socialMedia:hover {
+    background: linear-gradient(rgba(52, 86, 203, 0.8), rgba(52, 86, 203, 0.4));
+}
+
+.ux:hover, .access:hover, .html:hover, .qa:hover {
+    background: linear-gradient(rgba(191, 115, 124, 0.8), rgba(191, 115, 124, 0.4));
+}
+
 .seo {
     grid-area: seo;
     /* background-color: #3456cb; */
@@ -507,17 +551,20 @@ body {
 
 .seo-screenshot {
     grid-area: seo-screenshot;
-    background-color: #3456cb;
+    /* background-color: #3456cb; */
+    /* width: 80%; */
 }
 
 .seo-words {
     grid-area: seo-words;
-    background-color: #af505b;
+    /* background-color: #af505b; */
+    /* opacity: 0.5; */
+    border-radius: 50px;
 }
 
 .seo-words, .seo-screenshot {
-    color: white;
-    text-align: center;
+    color: #000;
+    /* text-align: center; */
     padding: 20px;
     margin: 20px;
 }
@@ -585,7 +632,7 @@ i.mobile-toggle {
 /*TEXT*/
 
 .para1 {
-    font-size: 18px;
+    /* font-size: px; */
     line-height: 30px;
 }
 
