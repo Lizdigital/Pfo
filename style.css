@@ -298,7 +298,21 @@ header {
 /*LINKS*/
 
 a {
-    text-decoration: none; /*remove underlines*/
+    text-decoration: none;
+    color: #af505b;
+}
+
+.nav a:focus, .inlineLink:focus, .footer:focus {
+    padding: 10px;
+}
+
+.inlineLink {
+    text-decoration: underline; /*remove underlines*/
+}
+
+.inlineLink:hover {
+    color: #3456cb;
+    transition: 0.5s ease;
 }
 
 
