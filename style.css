@@ -82,9 +82,14 @@ hr {
     /* border: 1px solid black; */
     box-shadow: 1px 1px 5px #cfb1b5;
     color: white;
+    /* text-transform: uppercase;
+    font-weight: 700; */
+    font-size: 21px;
+}
+
+.beforeHoverText {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 21px;
 }
 
 .seo, .skillsSeoImg {
@@ -293,6 +298,20 @@ header {
 
 .hover-text {
     opacity: 0;
+    /* max-width: 50%; */
+}
+
+.wordBox {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 1px 1px 1px black;
+}
+
+.wordBox:hover {
+    color: #af505b;
+    border: 1px solid #3456cb;
 }
 
 /*LINKS*/
@@ -496,8 +515,8 @@ body {
     /* border: 1px solid black; */
     box-shadow: 1px 1px 5px #cfb1b5;
     color: white;
-    text-transform: uppercase;
-    font-weight: 700;
+    /* text-transform: uppercase;
+    font-weight: 700; */
     font-size: 21px;
     margin: 0;
 }
@@ -516,9 +535,9 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/seo.jpg');
 }
 
-.seo:hover {
+/* .seo:hover {
     content: "SEO testing";
-}
+} */
 
 .ux {
     grid-area: ux;
