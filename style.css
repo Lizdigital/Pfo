@@ -82,15 +82,16 @@ hr {
     /* border: 1px solid black; */
     box-shadow: 1px 1px 5px #cfb1b5;
     color: white;
-    /* text-transform: uppercase;
-    font-weight: 700; */
+    /* text-transform: uppercase; */
+    /* font-weight: 700; */
     font-size: 21px;
+    text-align: left;
 }
 
-.beforeHoverText {
+/* .beforeHoverText {
     text-transform: uppercase;
     font-weight: 700;
-}
+} */
 
 .seo, .skillsSeoImg {
     grid-area: seo;
@@ -110,18 +111,18 @@ hr {
     opacity: 1;
 } */
 
-.seo:hover .hover-text {
+.seo:hover .hover-text, .ux:hover .hover-text, .analytics:hover .hover-text, .access:hover .hover-text, .cms:hover .hover-text, .html:hover .hover-text, .css:hover .hover-text, .qa:hover .hover-text, .socialMedia:hover .hover-text {
     opacity: 1;
-    transition: opacity 0.9s ease;
+    transition: opacity 1.2s ease;
 }
 
-.beforeHoverText {
+/* .beforeHoverText {
     opacity: 1;
 }
 
 .seo:hover .beforeHoverText {
     opacity: 0;
-}
+} */
 
 .ux, .skillsUxImg {
     grid-area: ux;
@@ -244,6 +245,11 @@ header {
     line-height: 25px;
 }
 
+.contact {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
 .footer {
     /* background-color: #af505b; */
     text-align: center;
@@ -269,6 +275,7 @@ header {
     background-color: #af505b;
     padding: 5px 0;
     box-shadow: 2px 2px 5px #BF737C;
+    color: white;
 }
 
 .h3, .h3words {
@@ -302,16 +309,19 @@ header {
 }
 
 .wordBox {
-    border: 1px solid black;
+    border: 1px solid #be2d3e;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    box-shadow: 1px 1px 1px black;
+    background-color: #bf737c;
+    color: white;
+    /* box-shadow: 1px 1px 1px black; */
 }
 
 .wordBox:hover {
-    color: #af505b;
-    border: 1px solid #3456cb;
+    border: 1px solid #bf737c;
+    background-color: rgba(191, 115, 124, 0.2);
+    color: #000;
 }
 
 /*LINKS*/
@@ -416,6 +426,12 @@ a {
         /* background-color: purple; */
     }
 
+/*TEXT*/
+
+.wordBox {
+    margin: 20px 30px;
+}
+
 /*IMAGES*/
 
     .words {
@@ -444,6 +460,12 @@ a {
         margin: 100px 150px;
         /* background-color: purple; */
     }
+
+/*TEXT*/
+
+.wordBox {
+    margin: 20px 70px;
+}
 }
 
 
@@ -464,7 +486,7 @@ body {
     'access access cms cms html html'
     'css css qa qa socialMedia socialMedia';
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
     gap: 15px;
 }
 
@@ -517,7 +539,7 @@ body {
     color: white;
     /* text-transform: uppercase;
     font-weight: 700; */
-    font-size: 21px;
+    font-size: 25px;
     margin: 0;
 }
 
@@ -651,7 +673,7 @@ i.mobile-toggle {
 /*HEADINGS*/
 
 .h1 {
-    font-size: 40px;
+    font-size: 42px;
 }
 
 .h2 {
