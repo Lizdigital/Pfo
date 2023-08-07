@@ -134,11 +134,6 @@ hr {
     opacity: 1;
 } */
 
-.seo:hover .hover-text, .ux:hover .hover-text, .analytics:hover .hover-text, .access:hover .hover-text, .cms:hover .hover-text, .html:hover .hover-text, .css:hover .hover-text, .qa:hover .hover-text, .socialMedia:hover .hover-text {
-    opacity: 1;
-    transition: opacity 1.2s ease;
-}
-
 /* .beforeHoverText {
     opacity: 1;
 }
@@ -260,17 +255,17 @@ i.mobile-toggle {
 }
 
 header {
-    min-height: 40vh;
+    min-height: 20vh;
 }
 
 .headerText {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .About{
     display: grid;
     justify-content: center;
-    margin: 0 50px;
+    margin: 0 40px;
     /* background-color: #BF737C; */
     padding: 20px;
     line-height: 25px;
@@ -676,6 +671,11 @@ body {
 
 .ux:hover, .access:hover, .html:hover, .qa:hover {
     background: linear-gradient(rgba(191, 115, 124, 0.8), rgba(191, 115, 124, 0.4));
+}
+
+.seo:hover .hover-text, .ux:hover .hover-text, .analytics:hover .hover-text, .access:hover .hover-text, .cms:hover .hover-text, .html:hover .hover-text, .css:hover .hover-text, .qa:hover .hover-text, .socialMedia:hover .hover-text {
+    opacity: 1;
+    transition: opacity 1.2s ease;
 }
 
 .seo {
